@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* border border-bottom-0 rounded-top bg-light\ */
+header{
+    border: 1px solid #dee2e6;
+    border-radius: 10px 10px 0px 0px;
+}
+/* d-flex flex-row container-fluid px-1 align-items-center */
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    padding: 0 0.25rem;
+}
+
+/* d-flex flex-column */
+.headerNav{
+    display: flex;
+    flex-direction: column;
+    width: 17.1%;
+}
+
+.headerNav > a{
+    text-align: center;
+}
+
+/* titulo mt-1 text-center ms-2 */
+
+.headerNav > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* d-flex flex-row */
+
+.accountDashboard{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+/* d-flex flex-column justify-content-center w-100 */
+
+.containerTela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* titulo mt-1 text-center */
+
+.containerTela > h2{
+   font-weight: bold;
+   font-size: 0.9em;
+   margin-top: 0.25rem;
+}
+
+/* main */
+
+/* container-fluid p-0 bg-light border rounded-bottom */
+main{
+    border: 1px solid #dee2e6;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* d-flex flex-row flex-wrap visible ? bg-light */
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+}

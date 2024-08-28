@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-icons.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
-       
+        <link rel="stylesheet" href="/css/main.css">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
  
         <!-- <script type='text/javascript' src='assets/bootstrap/js/jquery-364.min.js'></script> -->
@@ -47,29 +47,29 @@
         <!--------------------------------
         --------- H E A D E R ------------
         --------------------------------->
-        <header class="border border-bottom-0 rounded-top bg-light">
+        <header>
 
-            <div class="d-flex flex-row container-fluid px-1 align-items-center">
+            <div class="headerContainer">
 
-                <div class="d-flex flex-column" style="width: 17.1%;">
+                <nav class="headerNav">
                     
-                    <a class="navbar-brand text-center" href="/">
-                        <img class="logo" src="/img/fsph_logo.png">                        
+                    <a href="/">
+                        <img class="logo" src="/img/fsph_logo.png" alt="fspg-logo">                        
                     </a>
                     
-                    <span class="titulo mt-1 text-center ms-2">HEMOSE - Ambulatorio</span>
+                    <h1>HEMOSE - Ambulatorio</h1>
 
-                </div>
+                </nav>
 
-                <div class="d-flex flex-row" id="modulos"  style="width: 82.9%;">                    
+                <div class="accountDashboard" id="modulos">                    
                     <button class="btn" type="button">Registra-se</button>
                     <button class="btn" type="button" onclick="Autenticar()">Entrar</button>
                 </div>
 
             </div>
 
-            <div class="d-flex flex-column justify-content-center w-100">
-                <span class="titulo mt-1 text-center" id="nome-tela"></span>
+            <div class="containerTela">
+                <h2 id="nome-tela"></h2>
             </div>
 
         </header>
@@ -77,9 +77,9 @@
         <!--------------------------------
         ------------ M A I N ------------- '<img src = "data:image/png;base64,' . base64_encode($row['product_image']) . '" width = "50px" height = "50px"/>'
         --------------------------------->
-        <main class="container-fluid p-0 bg-light border rounded-bottom">
+        <main>
 
-            <div class="d-flex flex-row flex-wrap visible bg-light" id="hide">
+            <section class="mainContainer" id="hide">
 
                 <div class="border-start w-15">
 
@@ -96,7 +96,7 @@
                     <img class="logo-painel" src="/img/fsph_logo.png" alt="" srcset="">
                 </div>
 
-            </div>
+            </section>
             
         </main>
 
